@@ -438,6 +438,8 @@ Plug 'janko/vim-test'
 
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'github/copilot.vim'
+
 " Languages and file types.
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'chr4/nginx.vim'
