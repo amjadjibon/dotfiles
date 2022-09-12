@@ -482,6 +482,9 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 
+Plug 'dense-analysis/ale'
+Plug 'bufbuild/vim-buf'
+
 set encoding=UTF-8
 
 call plug#end()
@@ -506,6 +509,12 @@ let g:NERDTreeDirArrowCollapsible="~"
 let g:NERDTreeShowHidden=1
 let g:NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeQuitOnOpen=0
+
+let g:ale_linters = {
+\   'proto': ['buf-lint',],
+\}
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters_explicit = 1
 
 " autocmd VimEnter * NERDTreeToggle
 " autocmd StdinReadPre * let s:std_in=1
